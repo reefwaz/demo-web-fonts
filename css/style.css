@@ -1,0 +1,33 @@
+/* There are three main ways to bring fonts into a projecr:
+1. Use a system font with a stack (users will already have installed on their devices)
+2. Use an online font library (google fonts, adobe fonts)
+3. Use a cutsom font by hosting and linking to a WOFF file
+ */
+
+ @font-face {
+    font-family: 'typewritter';
+    src: url('../Fonts/veteran_typewriter_regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    /* font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; */
+    font-family: 'typewritter', 'Courier New', monospace;
+    background-color: #dedcda;
+    color: #3b373f;
+    font-size: 2rem;
+}
+
+h2 {
+    font-family: 'Beth Ellen', cursive;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
